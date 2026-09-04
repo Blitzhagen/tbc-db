@@ -611,7 +611,7 @@ function execute_sql_file()
   if [[ "$3" = "" ]]; then showstatus=false; fi
   if [[ "$showstatus" = true ]]; then echo -n "$3 ... "; fi
   export MYSQL_PWD="$MYSQL_PASSWORD"
-  ERRORS=$("$MYSQL_PATH" -u"$MYSQL_USERNAME" -h"$MYSQL_HOST" -P"$MYSQL_PORT" -s -N -D "$1" < "$2" 2>&1)
+  ERRORS=$("$MYSQL_PATH" --default-character-set=utf8 -u"$MYSQL_USERNAME" -h"$MYSQL_HOST" -P"$MYSQL_PORT" -s -N -D "$1" < "$2" 2>&1)
   if [[ $? != 0 ]]; then
     if [[ "$showstatus" = true ]]; then
       echo "FAILED!"

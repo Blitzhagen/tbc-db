@@ -1,3 +1,6 @@
+SET CHARACTER SET utf8;
+SET NAMES 'utf8';
+
 --
 -- Daten für Table `locales_item`
 --
@@ -475,7 +478,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (1510, '', '', 'Schwerer Hammer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (1511, '', '', 'Schwert der Bürgerlichen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (1512, '', '', 'Kunstlose Streitaxt', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(1513, '', '', 'Altes Großschwert', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(1513, '', '', 'Altes Großschwert', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (1514, '', '', 'Rostiger Kriegshammer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (1515, '', '', 'Rauer Holzstab', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -948,7 +951,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (2274, '', '', 'Pionierhandschuhe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2276, '', '', 'Sumpfwandlerstiefel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2277, '', '', 'Totenbeschwörer-Gamaschen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(2278, '', '', 'Schulterklappen des Fährtenlesers', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(2278, '', '', 'Schulterklappen des Fährtenlesers', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (2280, '', '', 'Kams Wanderstecken', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2281, '', '', 'Rodentia-Feuersteinaxt', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -1420,7 +1423,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (2903, '', '', 'Daryls Jagdbogen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2904, '', '', 'Daryls Jagdgewehr', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2905, '', '', 'Ziegenfell-Umhang', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(2906, '', '', 'Panzergamaschen von Dunkelhain', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(2906, '', '', 'Panzergamaschen von Dunkelhain', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (2907, '', '', 'Zwergischer Baumhacker', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2908, '', '', 'Dornenklinge', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -1897,7 +1900,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (3521, '', '', 'Geschickt verschlüsselter Brief', '', '', '', '', '', NULL, NULL, 'Dieser Brief ist verschlüsselt und nicht zu entziffern.', NULL, NULL, NULL, NULL, NULL),
 (3530, '', '', 'Wollverband', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (3531, '', '', 'Schwerer Wollverband', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(3550, '', '', 'Targs Kopf', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(3550, '', '', 'Targs Kopf', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (3551, '', '', 'Muckrakes Kopf', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (3552, '', '', 'Glommus\' Kopf', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -2372,7 +2375,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (4096, '', '', 'Grobes Gorillahaar', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (4097, '', '', 'Gesplitterter Gorillazahn', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (4098, '', '', 'Sorgfältig gefaltete Notiz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(4099, '', '', 'Büschel Gorillahaare', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(4099, '', '', 'Büschel Gorillahaare', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (4100, '', '', 'Zusammengeknüllte Notiz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (4101, '', '', 'Zerfetzte Notiz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -2850,7 +2853,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (4720, '', '', 'Nachthauchschärpe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (4721, '', '', 'Insignien-Mantel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (4722, '', '', 'Insignien-Umhang', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(4723, '', '', 'Humberts Hose', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(4723, '', '', 'Humberts Hose', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (4724, '', '', 'Humberts Helm', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (4725, '', '', 'Oberbrigadierschulterstücke', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -3329,7 +3332,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (5334, '', '', '99 Jahre alter Portwein', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (5335, '', '', 'Ein Sack Münzen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (5336, '', '', 'Grell-Ohrring', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(5337, '', '', 'Wanderer-Handschuhe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(5337, '', '', 'Wanderer-Handschuhe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (5338, '', '', 'Altes Mondstein-Siegel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (5339, '', '', 'Schlangenflaum', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -3805,7 +3808,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (6056, '', '', 'Rezept: Frostschutztrank', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (6057, '', '', 'Rezept: Naturschutztrank', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (6058, '', '', 'Geschwärzter Ledergürtel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(6059, '', '', 'Nomadenweste', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(6059, '', '', 'Nomadenweste', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (6060, '', '', 'Flachs-Armschienen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (6061, '', '', 'Graustein-Armschienen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -4282,7 +4285,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (6622, '', '', 'Schwert des Eifers', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (6624, '', '', 'Ken\'ziglas Trunk', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (6625, '', '', 'Schmutzverkrusteter Anhänger', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(6626, '', '', 'Dograns Anhänger', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(6626, '', '', 'Dograns Anhänger', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (6627, '', '', 'Mutantenschuppenbrustplatte', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (6628, '', '', 'Rabenklauen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -4760,7 +4763,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (7442, '', '', 'Gyromasts Schlüssel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (7443, '', '', 'Schildwachenhandschuhe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (7444, '', '', 'Schildwachenstiefel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(7445, '', '', 'Schildwachenschultern', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(7445, '', '', 'Schildwachenschultern', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (7446, '', '', 'Schildwachenumhang', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (7447, '', '', 'Schildwachenarmschienen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -5231,7 +5234,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (8247, '', '', 'Imperiale rote Armschienen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (8248, '', '', 'Imperialer roter Umhang', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (8249, '', '', 'Imperiale rote Handschuhe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(8250, '', '', 'Imperialer roter Mantel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(8250, '', '', 'Imperialer roter Mantel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (8251, '', '', 'Imperiale rote Hose', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (8252, '', '', 'Imperiale rote Robe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -5690,7 +5693,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (9471, '', '', 'Nekrums Medaillon', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (9472, '', '', 'Hexxs Schlüssel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (9473, '', '', 'Verwunschene Hoodoohaut', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(9474, '', '', 'Verwunschener Hoodookilt', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(9474, '', '', 'Verwunschener Hoodookilt', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (9475, '', '', 'Diabolisches Schlitzmesser', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (9476, '', '', 'Große böse Schulterstücke', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -6169,7 +6172,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (10072, '', '', 'Rechtschaffene Handschuhe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (10073, '', '', 'Rechtschaffener Helm', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (10074, '', '', 'Rechtschaffene Gamaschen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(10075, '', '', 'Rechtschaffene Schiftung', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(10075, '', '', 'Rechtschaffene Schiftung', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (10076, '', '', 'Adelsarmschützer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (10077, '', '', 'Adelsbrustplatte', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -6633,7 +6636,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (10662, '', '', 'Gefülltes Ei von Hakkar', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (10663, '', '', 'Essenz von Hakkar', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (10664, '', '', 'Eine Notiz an Magus Rimtori', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(10678, '', '', 'Magathas Notiz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(10678, '', '', 'Magathas Notiz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (10679, '', '', 'Androns Notiz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (10680, '', '', 'Jes\'rimons Notiz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -7541,7 +7544,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (12355, '', '', 'Talisman der Verderbnis', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (12356, '', '', 'Ei eines Steilhangflügeldrachen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (12358, '', '', 'Darkstone-Schrifttafel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(12359, '', '', 'Thoriumbarren', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(12359, '', '', 'Thoriumbarren', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (12360, '', '', 'Arkanitbarren', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (12361, '', '', 'Blauer Saphir', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -7991,7 +7994,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (13010, '', '', 'Beinschützer des Traumsängers', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (13011, '', '', 'Silbergefütterter Gürtel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (13012, '', '', 'Yorgens Armschienen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(13013, '', '', 'Hexerältestenmantel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(13013, '', '', 'Hexerältestenmantel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (13014, '', '', 'Axt von Rin\'ji', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (13015, '', '', 'Serathil', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -8443,7 +8446,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (13631, '', '', 'Monster - Spear, Badass Red', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (13632, '', '', 'Monster - Spear, Badass Blue', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (13698, '', '', 'Monster - Staff, Ornate Warlock Staff Black Glow Low', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(13699, '', '', 'Feuerstein', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(13699, '', '', 'Feuerstein', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (13700, '', '', 'Großer Feuerstein', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (13701, '', '', 'Erheblicher Feuerstein', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -8918,7 +8921,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (14411, '', '', 'Steinstoffhandschuhe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (14412, '', '', 'Steinstoffschulterklappen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (14413, '', '', 'Steinstoffrobe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(14414, '', '', 'Steinstoffgürtel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(14414, '', '', 'Steinstoffgürtel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (14415, '', '', 'Steinstoffkniehosen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (14416, '', '', 'Steinstoffbindungen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -9382,7 +9385,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (14944, '', '', 'Kriegshetzerkrone', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (14945, '', '', 'Kriegshetzerbeinschützer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (14946, '', '', 'Kriegshetzerschiftung', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(14947, '', '', 'Kriegshetzerschild', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(14947, '', '', 'Kriegshetzerschild', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (14948, '', '', 'Blutgeschmiedeter Brustharnisch', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (14949, '', '', 'Blutgeschmiedete Stulpen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -9862,7 +9865,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (15479, '', '', 'Stürmerrüstung', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (15480, '', '', 'Gebrauchter Gurt', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (15481, '', '', 'Gebrauchter Schienbeinschützer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(15482, '', '', 'Gebrauchte Bänder', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(15482, '', '', 'Gebrauchte Bänder', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (15483, '', '', 'Gebrauchter Umhang', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (15484, '', '', 'Gebrauchter Handschutz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -10329,7 +10332,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (16004, '', '', 'Dunkeleisengewehr', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16005, '', '', 'Dunkeleisenbombe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16006, '', '', 'Empfindlicher Arkanitwandler', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(16007, '', '', 'Fehlerloses Arkanitgewehr', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(16007, '', '', 'Fehlerloses Arkanitgewehr', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (16008, '', '', 'Schutzbrille des Meisteringenieurs', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16009, '', '', 'Modularer Stimmenverstärker', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -10765,7 +10768,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (16769, '', '', 'Medizintotem der Furbolgs', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16782, '', '', 'Seltsame Wasserkugel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16783, '', '', 'Gebündelte Berichte', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(16784, '', '', 'Saphir von Aku\'Mai', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(16784, '', '', 'Saphir von Aku\'Mai', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (16785, '', '', 'Rexxars Testament', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16786, '', '', 'Schwarzes Drachenbrutauge', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -11223,7 +11226,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (17691, '', '', 'Abzeichen der Stormpike Rang 1', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (17692, '', '', 'Hornring', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (17693, '', '', 'Beschichtete himmelblaue Phiole', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(17694, '', '', 'Band der Faust', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(17694, '', '', 'Band der Faust', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (17695, '', '', 'Kastanienbrauner Mantel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (17696, '', '', 'Gefüllte himmelblaue Phiole', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -11664,7 +11667,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (18533, '', '', 'Gordoks Armschienen der Macht', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (18534, '', '', 'Rute des Ogermagiers', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (18535, '', '', 'Millis Schild', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(18536, '', '', 'Millis Lexikon', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(18536, '', '', 'Millis Lexikon', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (18537, '', '', 'Gegenangriffsleitstein', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (18538, '', '', 'Verderben der Treants', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -12101,7 +12104,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (19134, '', '', 'Zerschundener Verdammniswachengürtel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (19135, '', '', 'Schwarzflammenarmschienen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (19136, '', '', 'Mana entfachende Kordel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(19137, '', '', 'Gurt des Ansturms', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(19137, '', '', 'Gurt des Ansturms', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (19138, '', '', 'Band von Sulfuras', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (19139, '', '', 'Brandwachenschultern', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -12523,7 +12526,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (19714, '', '', 'Silbernes Schmuckstück der Hakkari', '', '', '', '', '', NULL, NULL, 'Ein bedeutendes Symbol der Macht des Gurubashiimperiums.', NULL, NULL, NULL, NULL, NULL),
 (19715, '', '', 'Goldenes Schmuckstück der Hakkari', '', '', '', '', '', NULL, NULL, 'Ein bedeutendes Symbol der Macht des Gurubashiimperiums.', NULL, NULL, NULL, NULL, NULL),
 (19716, '', '', 'Urzeitliche Hakkaribindungen', '', '', '', '', '', NULL, NULL, 'Ein legendäres Symbol der Macht des alten Gurubashiimperiums.', NULL, NULL, NULL, NULL, NULL),
-(19717, '', '', 'Urzeitliche Hakkariarmsplinte', '', '', '', '', '', NULL, NULL, 'Ein legendäres Symbol der Macht des alten Gurubashiimperiums.', NULL, NULL, NULL, NULL, NULL);
+(19717, '', '', 'Urzeitliche Hakkariarmsplinte', '', '', '', '', '', NULL, NULL, 'Ein legendäres Symbol der Macht des alten Gurubashiimperiums.', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (19718, '', '', 'Urzeitliche Hakkaristütze', '', '', '', '', '', NULL, NULL, 'Ein legendäres Symbol der Macht des alten Gurubashiimperiums.', NULL, NULL, NULL, NULL, NULL),
 (19719, '', '', 'Urzeitlicher Hakkarigurt', '', '', '', '', '', NULL, NULL, 'Ein legendäres Symbol der Macht des alten Gurubashiimperiums.', NULL, NULL, NULL, NULL, NULL),
@@ -12950,7 +12953,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (20233, '', '', 'Basisüberlebenspaket von Arathor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (20234, '', '', 'Runenstoffverband der Entweihten', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (20235, '', '', 'Seidenverband der Entweihten', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(20236, '', '', 'Standardüberlebenspaket von Arathor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(20236, '', '', 'Standardüberlebenspaket von Arathor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (20237, '', '', 'Magiestoffverband des Highlanders', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (20243, '', '', 'Runenstoffverband des Highlanders', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -13387,7 +13390,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (21029, '', '', 'Lösegeldforderung', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21030, '', '', 'Darnassischer Kimchikuchen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21031, '', '', 'Weißkohlkimchi', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(21032, '', '', 'Meridiths Liebesbrief', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(21032, '', '', 'Meridiths Liebesbrief', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (21033, '', '', 'Rettichkimchi', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21037, '', '', 'Primitive Karte', '', '', '', '', '', NULL, NULL, 'Eine Karte, die anzeigt, an welcher Stelle die Gauner die Übergabe geplant haben.', NULL, NULL, NULL, NULL, NULL),
@@ -13819,7 +13822,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (21590, '', '', 'Große grüne Rakete', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21592, '', '', 'Große rote Rakete', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21593, '', '', 'Große weiße Rakete', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(21595, '', '', 'Große gelbe Rakete', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(21595, '', '', 'Große gelbe Rakete', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (21596, '', '', 'Ring des Göttertöters', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21597, '', '', 'Königliches Szepter von Vek\'lor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -14255,7 +14258,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (22310, '', '', 'Muster: Cenarische Kräutertasche', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (22311, '', '', 'Eisengewebte Stiefel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (22312, '', '', 'Muster: Cenarischer Ranzen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(22313, '', '', 'Eisengewebte Armschienen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(22313, '', '', 'Eisengewebte Armschienen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (22314, '', '', 'Harpune des Jägersmanns', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (22315, '', '', 'Hammer der Wiederbelebung', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -14694,7 +14697,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (23025, '', '', 'Siegel der Verdammten', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (23027, '', '', 'Güte der Vergebung', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (23028, '', '', 'Hagelschauerband', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(23029, '', '', 'Noths kaltes Herz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(23029, '', '', 'Noths kaltes Herz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (23030, '', '', 'Umhang der Geißel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (23031, '', '', 'Band des Unvermeidlichen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -14910,4 +14913,4 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (24232, '', '', 'Schäbiger Knoten', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (24281, '', '', 'Geschnitzter Elfenbeinknochen', '', '', '', '', '', NULL, NULL, 'Es sieht aus, als wäre die Schnitzerei nicht beendet worden...', NULL, NULL, NULL, NULL, NULL),
 (24282, '', '', 'Tagebuch eines Schurken', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(24283, '', '', 'Altmodisches Gewehr', '', '', '', '', '', NULL, NULL, 'Der Name \'Lasitor\' ist in den Lauf eingraviert.', NULL, NULL, NULL, NULL, NULL);
+(24283, '', '', 'Altmodisches Gewehr', '', '', '', '', '', NULL, NULL, 'Der Name \'Lasitor\' ist in den Lauf eingraviert.', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);

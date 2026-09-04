@@ -1,3 +1,6 @@
+SET CHARACTER SET utf8;
+SET NAMES 'utf8';
+
 --
 -- Table `locales_creature`
 --
@@ -305,7 +308,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (446, '', '', 'Berster der Rotkammgnolle', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (448, '', '', 'Hogger', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (449, '', '', 'Knöchelhauer der Defias', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(450, '', '', 'Renegatenmagier der Defias', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(450, '', '', 'Renegatenmagier der Defias', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (452, '', '', 'Bandit der Flusspfoten', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (453, '', '', 'Mystiker der Flusspfoten', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -747,7 +750,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (987, '', '', 'Ogromm', '', '', '', '', '', NULL, NULL, 'Jägerlehrer', NULL, NULL, NULL, NULL, NULL),
 (988, '', '', 'Kartosh', '', '', '', '', '', NULL, NULL, 'Hexenmeisterlehrer', NULL, NULL, NULL, NULL, NULL),
 (989, '', '', 'Banalash', '', '', '', '', '', NULL, NULL, 'Handwerkswaren', NULL, NULL, NULL, NULL, NULL),
-(994, '', '', 'Nahr\'ek der Heuler', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(994, '', '', 'Nahr\'ek der Heuler', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (995, '', '', 'Nahr\'eks Rudel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (996, '', '', 'Erik Dodds der Dritte', '', '', '', '', '', NULL, NULL, 'Schneiderlehrer', NULL, NULL, NULL, NULL, NULL),
@@ -1213,7 +1216,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (1496, '', '', 'Todeswache Dillinger', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (1497, '', '', 'Gunther Arcanus', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (1498, '', '', 'Bethor Iceshard', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(1499, '', '', 'Magistrat Sevren', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(1499, '', '', 'Magistrat Sevren', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (1500, '', '', 'Coleman Farthing', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (1501, '', '', 'Hirnloser Zombie', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -1659,7 +1662,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (1994, '', '', 'Githyiss die Üble', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (1995, '', '', 'Strigideule', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (1996, '', '', 'Strigidkreischer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(1997, '', '', 'Strigidjäger', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(1997, '', '', 'Strigidjäger', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (1998, '', '', 'Waldweberlauerer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (1999, '', '', 'Waldwebergiftzahn', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -2107,7 +2110,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (2495, '', '', 'Drizzlik', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2496, '', '', 'Baron Revilgaz', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2497, '', '', 'Nimboya', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(2498, '', '', 'Crank Fizzlebub', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(2498, '', '', 'Crank Fizzlebub', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (2499, '', '', 'Markel Smythe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2500, '', '', 'Kapitän Hecklebury Smotts', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -2563,7 +2566,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (2993, '', '', 'Baine Bloodhoof', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2994, '', '', 'Vorfahrengeist', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (2995, '', '', 'Tal', '', '', '', '', '', NULL, NULL, 'Windreitermeister', NULL, NULL, NULL, NULL, NULL),
-(2996, '', '', 'Torn', '', '', '', '', '', NULL, NULL, 'Bankier', NULL, NULL, NULL, NULL, NULL);
+(2996, '', '', 'Torn', '', '', '', '', '', NULL, NULL, 'Bankier', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (2997, '', '', 'Jyn Stonehoof', '', '', '', '', '', NULL, NULL, 'Waffenhändlerin', NULL, NULL, NULL, NULL, NULL),
 (2998, '', '', 'Karn Stonehoof', '', '', '', '', '', NULL, NULL, 'Schmiedekunstexperte', NULL, NULL, NULL, NULL, NULL),
@@ -3058,7 +3061,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (3496, '', '', 'Fuzruckle', '', '', '', '', '', NULL, NULL, 'Bankier', NULL, NULL, NULL, NULL, NULL),
 (3497, '', '', 'Kilxx', '', '', '', '', '', NULL, NULL, 'Angler', NULL, NULL, NULL, NULL, NULL),
 (3498, '', '', 'Jazzik', '', '', '', '', '', NULL, NULL, 'Gemischtwaren', NULL, NULL, NULL, NULL, NULL),
-(3499, '', '', 'Ranik', '', '', '', '', '', NULL, NULL, 'Handwerkswaren', NULL, NULL, NULL, NULL, NULL);
+(3499, '', '', 'Ranik', '', '', '', '', '', NULL, NULL, 'Handwerkswaren', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (3500, '', '', 'Tarhus', '', '', '', '', '', NULL, NULL, 'Reagenzienverkäufer', NULL, NULL, NULL, NULL, NULL),
 (3501, '', '', 'Wache der Horde', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -3493,7 +3496,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (3999, '', '', 'Buddler der Scherwindmine', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (4001, '', '', 'Tunnelratte der Scherwindmine', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (4002, '', '', 'Steinfräser der Scherwindmine', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(4003, '', '', 'Geomant der Scherwindmine', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(4003, '', '', 'Geomant der Scherwindmine', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (4004, '', '', 'Oberanführer der Scherwindmine', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (4005, '', '', 'Kluftmooskrabbler', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -3993,7 +3996,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (4566, '', '', 'Kaelystia Hatebringer', '', '', '', '', '', NULL, NULL, 'Magielehrerin', NULL, NULL, NULL, NULL, NULL),
 (4567, '', '', 'Pierce Shackleton', '', '', '', '', '', NULL, NULL, 'Magielehrer', NULL, NULL, NULL, NULL, NULL),
 (4568, '', '', 'Anastasia Hartwell', '', '', '', '', '', NULL, NULL, 'Magielehrerin', NULL, NULL, NULL, NULL, NULL),
-(4569, '', '', 'Charles Seaton', '', '', '', '', '', NULL, NULL, 'Klingenhändler', NULL, NULL, NULL, NULL, NULL);
+(4569, '', '', 'Charles Seaton', '', '', '', '', '', NULL, NULL, 'Klingenhändler', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (4570, '', '', 'Sydney Upton', '', '', '', '', '', NULL, NULL, 'Stabhändler', NULL, NULL, NULL, NULL, NULL),
 (4571, '', '', 'Morley Bates', '', '', '', '', '', NULL, NULL, 'Fungusverkäufer', NULL, NULL, NULL, NULL, NULL),
@@ -4494,7 +4497,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (5202, '', '', 'Zielscheibe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (5204, '', '', 'Apothekerin Zinge', '', '', '', '', '', NULL, NULL, 'Königliche Apothekervereinigung', NULL, NULL, NULL, NULL, NULL),
 (5224, '', '', 'Düstergleiter', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(5225, '', '', 'Düsterspeier', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(5225, '', '', 'Düsterspeier', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (5226, '', '', 'Düsterwurm', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (5228, '', '', 'Gesättigter Brühschlammer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -4995,7 +4998,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (5830, '', '', 'Schwester Wildkralle', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (5831, '', '', 'Flinkmähne', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (5832, '', '', 'Donnerstampfer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(5833, '', '', 'Margol der Wüterich', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(5833, '', '', 'Margol der Wüterich', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (5834, '', '', 'Azzere die Himmelsklinge', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (5835, '', '', 'Großknecht Grills', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -5496,7 +5499,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (6650, '', '', 'General Fangferror', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (6651, '', '', 'Torhüter Donnerschrei', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (6652, '', '', 'Meister Gräuelbart', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(6653, '', '', 'Titanische Kröte', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(6653, '', '', 'Titanische Kröte', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (6666, '', '', '\"Hahnentritt\" Johnsons Menschengestalt', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (6667, '', '', 'Gelkak Gyromast', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -5993,7 +5996,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (7725, '', '', 'Räuber der Grimmtotem', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (7726, '', '', 'Naturalist der Grimmtotem', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (7727, '', '', 'Schamane der Grimmtotem', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(7728, '', '', 'Kirith der Verdammte', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(7728, '', '', 'Kirith der Verdammte', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (7729, '', '', 'Geist von Kirith', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (7730, '', '', 'Grunzer des Steinkrallengebirges', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -6496,7 +6499,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (8764, '', '', 'Nebelschwingenverheerer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (8765, '', '', 'Waldkrabbler', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (8766, '', '', 'Waldbrühschlammer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(8767, '', '', 'Sah\'rhee', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(8767, '', '', 'Sah\'rhee', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (8776, '', '', 'Smaragdgrüner Großdrachenwelpe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (8777, '', '', 'Seinrick Coulthane', '', '', '', '', '', NULL, NULL, 'Kürschnerlehrer', NULL, NULL, NULL, NULL, NULL),
@@ -6996,7 +6999,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (10258, '', '', 'Krähenhorstwächter', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (10259, '', '', 'Worgwelpe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (10260, '', '', 'Kibler', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(10261, '', '', 'Brennender Teufelshund', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(10261, '', '', 'Brennender Teufelshund', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (10262, '', '', 'Opus', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (10263, '', '', 'Brennende Teufelswache', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -7496,7 +7499,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (11138, '', '', 'Maethrya', '', '', '', '', '', NULL, NULL, 'Hippogryphenmeisterin', NULL, NULL, NULL, NULL, NULL),
 (11139, '', '', 'Yugrek', '', '', '', '', '', NULL, NULL, 'Windreitermeister', NULL, NULL, NULL, NULL, NULL),
 (11140, '', '', 'Egan', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(11141, '', '', 'Geist von Trey Lichtschmied', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(11141, '', '', 'Geist von Trey Lichtschmied', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (11142, '', '', 'Untoter Postbote', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (11143, '', '', 'Postmeister Malown', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -7996,7 +7999,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (11887, '', '', 'Grufträuber', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (11896, '', '', 'Blutschlinger', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (11897, '', '', 'Dämmerschwinge', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(11898, '', '', 'Kreuzzüglerlord Valdelmar', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(11898, '', '', 'Kreuzzüglerlord Valdelmar', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (11899, '', '', 'Shardi', '', '', '', '', '', NULL, NULL, 'Windreitermeister', NULL, NULL, NULL, NULL, NULL),
 (11900, '', '', 'Brakkar', '', '', '', '', '', NULL, NULL, 'Windreitermeister', NULL, NULL, NULL, NULL, NULL),
@@ -8496,7 +8499,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (13197, '', '', 'Teufelspeitscher', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (13216, '', '', 'Gaelden Hammersmith', '', '', '', '', '', NULL, NULL, 'Stormpike-Versorgungsoffizier', NULL, NULL, NULL, NULL, NULL),
 (13217, '', '', 'Thanthaldis Snowgleam', '', '', '', '', '', NULL, NULL, 'Stormpike-Versorgungsoffizier', NULL, NULL, NULL, NULL, NULL),
-(13218, '', '', 'Grunnda Wolfheart', '', '', '', '', '', NULL, NULL, 'Versorgungsoffizier der Frostwolf', NULL, NULL, NULL, NULL, NULL);
+(13218, '', '', 'Grunnda Wolfheart', '', '', '', '', '', NULL, NULL, 'Versorgungsoffizier der Frostwolf', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (13219, '', '', 'Jekyll Flandring', '', '', '', '', '', NULL, NULL, 'Versorgungsoffizier der Frostwolf', NULL, NULL, NULL, NULL, NULL),
 (13220, '', '', 'Layo Starstrike', '', '', '', '', '', NULL, NULL, 'Der Zirkel des Cenarius', NULL, NULL, NULL, NULL, NULL),
@@ -8996,7 +8999,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (14542, '', '', 'Großer weißer Kodo', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (14543, '', '', 'Schneller olivfarbener Raptor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (14544, '', '', 'Schneller orangener Raptor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(14545, '', '', 'Schneller blauer Raptor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(14545, '', '', 'Schneller blauer Raptor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (14546, '', '', 'Schneller brauner Widder', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (14547, '', '', 'Schneller weißer Widder', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -9495,7 +9498,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (15295, '', '', 'Brunnenbehüter Solanian', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (15296, '', '', 'Arkanist Ithanas', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (15297, '', '', 'Arkanist Helion', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(15298, '', '', 'Besudeltes Arkangespenst', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(15298, '', '', 'Besudeltes Arkangespenst', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (15299, '', '', 'Viscidus', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (15300, '', '', 'Drohne der Vekniss', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -9996,7 +9999,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (15807, '', '', 'Schwacher Kriegshetzer des Anubisath', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (15808, '', '', 'Schwacher Silithidschinder', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (15809, '', '', 'C\'Thun Sichtbare Transformation', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(15810, '', '', 'Unbedeutender Kriegshetzer des Anubisath', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(15810, '', '', 'Unbedeutender Kriegshetzer des Anubisath', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (15811, '', '', 'Unbedeutender Silithidschinder', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (15812, '', '', 'Offizier der Qiraji', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -10496,7 +10499,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (16346, '', '', 'Verhexer der Waldschattentrolle', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16347, '', '', 'Verhungernde Geisterklaue', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16348, '', '', 'Geisterklauenluchs', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(16349, '', '', 'Geisterklauenverheerer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(16349, '', '', 'Geisterklauenverheerer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (16350, '', '', 'Spindelweberspinne', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16351, '', '', 'Spindelweberlauerer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -10996,7 +10999,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (16854, '', '', 'Eldinarcus', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16855, '', '', 'Tregla', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16856, '', '', 'Verwalter Dilandrus', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(16857, '', '', 'Plündernder Krustenbohrer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(16857, '', '', 'Plündernder Krustenbohrer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (16858, '', '', 'Grelag', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (16859, '', '', 'Drachenfalkenjungtier', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -11496,7 +11499,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (17367, '', '', 'Netherportal - Klarheit', '', '', '', '', '', NULL, NULL, 'Heilportal', NULL, NULL, NULL, NULL, NULL),
 (17368, '', '', 'Netherportal - Vorherrschaft', '', '', '', '', '', NULL, NULL, 'Schadensportal', NULL, NULL, NULL, NULL, NULL),
 (17369, '', '', 'Netherportal - Beharrlichkeit', '', '', '', '', '', NULL, NULL, 'Kampfportal', NULL, NULL, NULL, NULL, NULL),
-(17370, '', '', 'Vollstrecker des Lachenden Schädels', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(17370, '', '', 'Vollstrecker des Lachenden Schädels', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (17371, '', '', 'Hexenmeister des Schattenmondklans', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (17372, '', '', 'Grünschreiterjunges', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -11995,7 +11998,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (17872, '', '', 'Großknecht der Finsterblut', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (17873, '', '', 'Handlanger der Finsterblut', '', '', '', '', '', NULL, NULL, 'Lakai des Großknechts der Finsterblut', NULL, NULL, NULL, NULL, NULL),
 (17874, '', '', 'Abbild von Velen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(17875, '', '', 'Jäger der Hand', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(17875, '', '', 'Jäger der Hand', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (17876, '', '', 'Thrall', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (17877, '', '', 'Fhwoor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -12494,7 +12497,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (18397, '', '', 'Eindringling von Kil\'sorge', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (18398, '', '', 'Schmetterzehe', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (18399, '', '', 'Zwilling der Finsterblut', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(18400, '', '', 'Rokdar der Zerklüftete', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(18400, '', '', 'Rokdar der Zerklüftete', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (18401, '', '', 'Skra\'gath', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (18402, '', '', 'Champion der Totschläger', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -12994,7 +12997,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (18965, '', '', 'Bogenschütze von Darnassus', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (18966, '', '', 'Justinius der Vorbote', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (18967, '', '', 'Dunkler Angriff - Allianz Portal - Unsichtbarer Pirscher', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(18968, '', '', 'Dunkler Angriff - Horde Portal - Unsichtbarer Pirscher', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(18968, '', '', 'Dunkler Angriff - Horde Portal - Unsichtbarer Pirscher', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (18969, '', '', 'Melgromm Hoher-Berg', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (18970, '', '', 'Axtwerfer der Dunkelspeere', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -13509,7 +13512,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (19487, '', '', 'Reitdrachenfalke', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (19488, '', '', 'Hüter Dierwert', '', '', '', '', '', NULL, NULL, 'Bewahrer von Kirin\'Var', NULL, NULL, NULL, NULL, NULL),
 (19489, '', '', 'Zaubererleutnant Morran', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(19490, '', '', 'Welt Ausbilder für fliegende Reittiere', '', '', '', '', '', NULL, NULL, 'Stallmeisterin', NULL, NULL, NULL, NULL, NULL);
+(19490, '', '', 'Welt Ausbilder für fliegende Reittiere', '', '', '', '', '', NULL, NULL, 'Stallmeisterin', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (19491, '', '', 'Welt Verkäufer für fliegende Reittiere der Allianz', '', '', '', '', '', NULL, NULL, 'Stallmeisterin', NULL, NULL, NULL, NULL, NULL),
 (19492, '', '', 'Welt Verkäufer für fliegende Reittiere der Horde', '', '', '', '', '', NULL, NULL, 'Stallmeisterin', NULL, NULL, NULL, NULL, NULL),
@@ -13996,7 +13999,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (19999, '', '', 'Astralanischer Zauberdieb', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (20000, '', '', 'Kanrethad', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (20001, '', '', 'Berglöwenmutter', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(20002, '', '', 'Hurlog Horde', '', '', '', '', '', NULL, NULL, 'Kampfmeister der Kriegshymnenschlucht', NULL, NULL, NULL, NULL, NULL);
+(20002, '', '', 'Hurlog Horde', '', '', '', '', '', NULL, NULL, 'Kampfmeister der Kriegshymnenschlucht', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (20003, '', '', 'Blade\'s Edge Kneel Target 01', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (20010, '', '', 'Illiyana Mondflamm', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -14497,7 +14500,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (20726, '', '', 'Mugdorg', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (20727, '', '', 'Hauptmann Zovax', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (20728, '', '', 'Raptor der Speerspießer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(20729, '', '', 'Verheerer der Speerspießer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(20729, '', '', 'Verheerer der Speerspießer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (20730, '', '', 'Glumdor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (20731, '', '', 'Droggam', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -14996,7 +14999,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (21245, '', '', 'Marodeur der Knochenmalmer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21246, '', '', 'Sporensegler des Echsenkessels', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21247, '', '', 'Oronoks Huhn', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(21248, '', '', 'Pin', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(21248, '', '', 'Pin', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (21249, '', '', 'Zornpirscher', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21250, '', '', 'Rosa Elekk', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -15497,7 +15500,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (21874, '', '', 'Wasserwandelnder Elementar', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21875, '', '', 'Schatten von Leotheras', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21876, '', '', 'Schattenkette', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(21877, '', '', 'Karsius der uralte Wächter', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(21877, '', '', 'Karsius der uralte Wächter', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (21878, '', '', 'Teufelseber', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (21879, '', '', 'Finsterflügelschimäre', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -15997,7 +16000,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (22425, '', '', 'Druide des Ewigen Hains', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (22426, '', '', 'Druide des Ewigen Hains', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (22427, '', '', 'Zarevhi', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(22428, '', '', 'Rauchsignal', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(22428, '', '', 'Rauchsignal', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (22429, '', '', 'Vekax', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (22430, '', '', 'Gehilfe Klatu', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -16496,7 +16499,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (23212, '', '', 'Quäler der Mo\'arg', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (23213, '', '', 'Peonhammel des Drachenmals', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (23214, '', '', 'Quäler der Mo\'arg Transformation', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(23215, '', '', 'Zauberer der Aschenzungen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(23215, '', '', 'Zauberer der Aschenzungen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (23216, '', '', 'Verteidiger der Aschenzungen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (23217, '', '', 'Agent der Speerspießer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -16996,7 +16999,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (23896, '', '', 'Michael \"Schmutz\" Fink', '', '', '', '', '', NULL, NULL, 'Angellehrer & Handwerkswaren', NULL, NULL, NULL, NULL, NULL),
 (23897, '', '', 'Zungam', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (23899, '', '', 'Tethyr', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(23900, '', '', 'Schütze von Theramore', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(23900, '', '', 'Schütze von Theramore', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (23902, '', '', 'Reitwolf (Geist)', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (23903, '', '', 'Schneller Reitwolf (Geist)', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -17497,7 +17500,7 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (25076, '', '', 'Navigator Schönwetter', '', '', '', '', '', NULL, NULL, 'Die Donnersturm', NULL, NULL, NULL, NULL, NULL),
 (25077, '', '', 'Himmelskapitän Wolkenwirbler', '', '', '', '', '', NULL, NULL, 'Die Donnersturm', NULL, NULL, NULL, NULL, NULL),
 (25078, '', '', 'Kapitän Krick Düsenzang', '', '', '', '', '', NULL, NULL, 'Die Launische Minna', NULL, NULL, NULL, NULL, NULL),
-(25079, '', '', 'Todeswache Fowles', '', '', '', '', '', NULL, NULL, 'Die Donnersturm', NULL, NULL, NULL, NULL, NULL);
+(25079, '', '', 'Todeswache Fowles', '', '', '', '', '', NULL, NULL, 'Die Donnersturm', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);
 INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `subname_loc1`, `subname_loc2`, `subname_loc3`, `subname_loc4`, `subname_loc5`, `subname_loc6`, `subname_loc7`, `subname_loc8`) VALUES
 (25080, '', '', 'Grunzer Umgor', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (25081, '', '', 'Grunzerin Ounda', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -18082,4 +18085,4 @@ INSERT INTO `locales_creature` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, 
 (28596, '', '', 'Zwergischer Bauarbeiter', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (29089, '', '', 'Mini-Tyrael', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (29093, '', '', 'Ian Drake', '', '', '', '', '', NULL, NULL, 'Ältester', NULL, NULL, NULL, NULL, NULL),
-(29095, '', '', 'Edward Cairn', '', '', '', '', '', NULL, NULL, 'Ältester', NULL, NULL, NULL, NULL, NULL);
+(29095, '', '', 'Edward Cairn', '', '', '', '', '', NULL, NULL, 'Ältester', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), subname_loc3=VALUES(subname_loc3);

@@ -1,3 +1,6 @@
+SET CHARACTER SET utf8;
+SET NAMES 'utf8';
+
 --
 -- Daten für Table `locales_gameobject`
 --
@@ -852,7 +855,7 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (175772, '', '', 'Admiral Barean Westwind', '', '', '', '', ''),
 (175773, '', '', 'Dorgar Stonebrow', '', '', '', '', ''),
 (175774, '', '', 'Fellari Swiftarrow', '', '', '', '', ''),
-(175775, '', '', 'Ferren Marcus', '', '', '', '', '');
+(175775, '', '', 'Ferren Marcus', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`) VALUES
 (175776, '', '', 'Harthal Truesight', '', '', '', '', ''),
 (175777, '', '', 'Holia Sunshield', '', '', '', '', ''),
@@ -1762,7 +1765,7 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (2052, '', '', 'Ambermill', '', '', '', '', ''),
 (2056, '', '', 'Lagerfeuer', '', '', '', '', ''),
 (2057, '', '', 'Lagerfeuer', '', '', '', '', ''),
-(2061, '', '', 'Lagerfeuer', '', '', '', '', '');
+(2061, '', '', 'Lagerfeuer', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`) VALUES
 (2062, '', '', 'Lagerfeuer', '', '', '', '', ''),
 (2066, '', '', 'Freudenfeuerschaden', '', '', '', '', ''),
@@ -2729,7 +2732,7 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (22712, '', '', 'Gemütliches Feuer', '', '', '', '', ''),
 (22719, '', '', 'Holzstuhl', '', '', '', '', ''),
 (22727, '', '', 'Holzstuhl', '', '', '', '', ''),
-(22732, '', '', 'Holzstuhl', '', '', '', '', '');
+(22732, '', '', 'Holzstuhl', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`) VALUES
 (22733, '', '', 'Holzstuhl', '', '', '', '', ''),
 (22734, '', '', 'Holzstuhl', '', '', '', '', ''),
@@ -3708,7 +3711,7 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (40200, '', '', 'Feuer', '', '', '', '', ''),
 (40201, '', '', 'Feuer', '', '', '', '', ''),
 (40298, '', '', 'Lagerfeuer', '', '', '', '', ''),
-(40299, '', '', 'Lagerfeuer', '', '', '', '', '');
+(40299, '', '', 'Lagerfeuer', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`) VALUES
 (40301, '', '', 'Lagerfeuer', '', '', '', '', ''),
 (40303, '', '', 'Amboss', '', '', '', '', ''),
@@ -4670,7 +4673,7 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (113756, '', '', 'Schurkenviertel', '', '', '', '', ''),
 (120584, '', '', 'Lagerfeuer', '', '', '', '', ''),
 (122088, '', '', 'Verwahrungskasten', '', '', '', '', ''),
-(123207, '', '', 'Goblinverhüttungstiegel', '', '', '', '', '');
+(123207, '', '', 'Goblinverhüttungstiegel', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`) VALUES
 (123208, '', '', 'Goblinverhüttungstiegel', '', '', '', '', ''),
 (123209, '', '', 'Goblinverhüttungstiegel', '', '', '', '', ''),
@@ -5645,7 +5648,7 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (165625, '', '', 'Stuhl', '', '', '', '', ''),
 (165626, '', '', 'Stuhl', '', '', '', '', ''),
 (165627, '', '', 'Stuhl', '', '', '', '', ''),
-(165628, '', '', 'Stuhl', '', '', '', '', '');
+(165628, '', '', 'Stuhl', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`) VALUES
 (165629, '', '', 'Stuhl', '', '', '', '', ''),
 (165630, '', '', 'Stuhl', '', '', '', '', ''),
@@ -6617,7 +6620,7 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (174744, '', '', 'Schattenschmiedekohlenpfanne', '', '', '', '', ''),
 (174745, '', '', 'Schattenschmiedekohlenpfanne', '', '', '', '', ''),
 (174764, '', '', 'Totembündel der Witherbark', '', '', '', '', ''),
-(174792, '', '', 'Silithidenkristall der Gorishi', '', '', '', '', '');
+(174792, '', '', 'Silithidenkristall der Gorishi', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`) VALUES
 (174793, '', '', 'Gorishi Schwarmbrutplatz', '', '', '', '', ''),
 (174794, '', '', 'Spiegelsee-Wasserfall', '', '', '', '', ''),
@@ -7577,7 +7580,7 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (177022, '', '', 'Freudenfeuer', '', '', '', '', ''),
 (177023, '', '', 'Freudenfeuer', '', '', '', '', ''),
 (177024, '', '', 'Freudenfeuer', '', '', '', '', ''),
-(177025, '', '', 'Freudenfeuer', '', '', '', '', '');
+(177025, '', '', 'Freudenfeuer', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`) VALUES
 (177026, '', '', 'Freudenfeuer', '', '', '', '', ''),
 (177044, '', '', 'Briefkasten', '', '', '', '', ''),
@@ -8463,7 +8466,7 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (180766, '', '', 'Laterne', '', '', '', '', ''),
 (180767, '', '', 'Laterne', '', '', '', '', ''),
 (180768, '', '', 'Laterne', '', '', '', '', ''),
-(180769, '', '', 'Lichter', '', '', '', '', '');
+(180769, '', '', 'Lichter', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`) VALUES
 (180770, '', '', 'Lichter', '', '', '', '', ''),
 (180771, '', '', 'Zünder für Feuerwerk', '', '', '', '', ''),
@@ -9371,7 +9374,7 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (183381, '', '', 'Kohlenpfanne', '', '', '', '', ''),
 (183382, '', '', 'Kohlenpfanne', '', '', '', '', ''),
 (183383, '', '', 'Feuergrube', '', '', '', '', ''),
-(183385, '', '', 'Bluthibiskus', '', '', '', '', '');
+(183385, '', '', 'Bluthibiskus', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
 INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`) VALUES
 (183386, '', '', 'Bluthibiskus', '', '', '', '', ''),
 (183393, '', '', 'Freudenfeuer', '', '', '', '', ''),
@@ -10284,4 +10287,4 @@ INSERT INTO `locales_gameobject` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`
 (211065, '', '', 'Grab', '', '', '', '', ''),
 (211067, '', '', 'Sarkophag', '', '', '', '', ''),
 (211068, '', '', 'Feuer Totem', '', '', '', '', ''),
-(211084, '', '', 'Mephistrophs HöllenFeuer', '', '', '', '', '');
+(211084, '', '', 'Mephistrophs HöllenFeuer', '', '', '', '', '') ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3);
