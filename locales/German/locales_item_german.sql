@@ -7079,7 +7079,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (11604, '', '', 'Dunkeleisenplatte', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (11605, '', '', 'Dunkeleisenschultern', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (11606, '', '', 'Dunkeleisenpanzer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(11607, '', '', 'Dunkeleisenzerreißer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL);
+(11607, '', '', 'Dunkeleisenzerreißer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (11608, '', '', 'Dunkeleisenpulverisierer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (11610, '', '', 'Pläne: Dunkeleisenpulverisierer', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
@@ -7544,7 +7544,7 @@ INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `nam
 (12355, '', '', 'Talisman der Verderbnis', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (12356, '', '', 'Ei eines Steilhangflügeldrachen', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (12358, '', '', 'Darkstone-Schrifttafel', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
-(12359, '', '', 'Thoriumbarren', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
+(12359, '', '', 'Thoriumbarren', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL) ON DUPLICATE KEY UPDATE name_loc3=VALUES(name_loc3), description_loc3=VALUES(description_loc3);
 INSERT INTO `locales_item` (`entry`, `name_loc1`, `name_loc2`, `name_loc3`, `name_loc4`, `name_loc5`, `name_loc6`, `name_loc7`, `name_loc8`, `description_loc1`, `description_loc2`, `description_loc3`, `description_loc4`, `description_loc5`, `description_loc6`, `description_loc7`, `description_loc8`) VALUES
 (12360, '', '', 'Arkanitbarren', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
 (12361, '', '', 'Blauer Saphir', '', '', '', '', '', NULL, NULL, '', NULL, NULL, NULL, NULL, NULL),
